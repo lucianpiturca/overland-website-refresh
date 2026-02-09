@@ -12,7 +12,7 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Overland Transport" 
-              className="h-32 w-auto object-contain mb-4 bg-white rounded-lg p-2"
+              className="h-40 w-auto object-contain mb-4 bg-white rounded-lg p-1"
             />
             <p className="text-primary-foreground/80 max-w-md leading-relaxed">
               Your premier goods transport solution serving all across Europe and the UK. 
