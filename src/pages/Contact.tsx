@@ -138,7 +138,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-1">Service Area</h3>
                       <p className="text-muted-foreground">
-                        European Union<br />
+                        Europe and United Kingdom<br />
                         Cross-border transport services
                       </p>
                     </div>

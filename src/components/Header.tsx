@@ -19,13 +19,13 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-28 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
               alt="Overland Transport" 
-              className="h-20 w-auto object-contain"
+              className="h-28 w-auto object-contain"
             />
           </Link>
 
