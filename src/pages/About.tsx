@@ -3,10 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 
 const stats = [
-  { icon: Truck, value: "500+", label: "Deliveries Monthly" },
-  { icon: Users, value: "150+", label: "Happy Clients" },
-  { icon: Award, value: "10+", label: "Years Experience" },
-  { icon: Target, value: "99%", label: "On-Time Delivery" },
+  { icon: Truck, value: "100+", label: "Deliveries Monthly" },
+  { icon: Users, value: "50+", label: "Happy Clients" },
+  { icon: Award, value: "2022", label: "Founded" },
+  { icon: Target, value: "100%", label: "On-Time Delivery" },
 ];
 
 const About = () => {
@@ -20,9 +20,9 @@ const About = () => {
               About <span className="text-primary">Overland Transport</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Welcome to a new era of reliable and efficient goods transport services. 
-              Our success is driven by a team of dedicated professionals who bring expertise 
-              and passion to every aspect of our operation.
+              Founded in 2022 in Oradea, Romania, we provide reliable and efficient goods transport 
+              across Europe and the UK. Our success is driven by a team of dedicated professionals 
+              who bring expertise and passion to every aspect of our operation.
             </p>
           </div>
         </div>

@@ -12,11 +12,12 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Overland Transport" 
-              className="h-16 w-auto object-contain mb-4 bg-white rounded-lg p-2"
+              className="h-24 w-auto object-contain mb-4 bg-white rounded-lg p-2"
             />
             <p className="text-primary-foreground/80 max-w-md leading-relaxed">
-              Your premier goods transport solution. Efficiency, reliability, and precision 
-              define the core of our services. We don't just move goods – we move businesses forward.
+              Your premier goods transport solution serving all across Europe and the UK. 
+              Founded in 2022, we deliver efficiency, reliability, and precision. 
+              We don't just move goods – we move businesses forward.
             </p>
           </div>
 
@@ -62,8 +63,11 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="h-5 w-5 mt-0.5" />
-                <span>European Union</span>
+                <span>Oradea, Romania</span>
               </div>
+              <p className="text-primary-foreground/60 text-sm mt-2 ml-8">
+                Serving all across Europe + UK
+              </p>
             </div>
           </div>
         </div>

@@ -51,8 +51,8 @@ const Home = () => {
             <span className="text-primary">Transport Solution</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Efficiency, reliability, and precision define the core of our services. 
-            Whether you're moving raw materials, finished products, or fragile cargo – we've got you covered.
+            Serving all across Europe and the UK since 2022. Efficiency, reliability, and 100% on-time delivery 
+            define our services. Whether you're moving raw materials, finished products, or fragile cargo – we've got you covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <Button size="lg" asChild className="text-lg px-8">
