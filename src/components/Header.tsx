@@ -54,7 +54,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Overland Transport" 
-              className="h-36 w-auto object-contain -my-2"
+              className="h-40 w-auto object-contain -my-2"
             />
           </Link>
 
@@ -64,7 +64,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 rounded-lg font-heading font-medium text-sm transition-colors ${
+                className={`px-5 py-2.5 rounded-lg font-heading font-semibold text-base transition-colors ${
                   location.pathname === item.path
                     ? "bg-primary text-primary-foreground"
                     : "text-foreground hover:bg-accent hover:text-accent-foreground"
