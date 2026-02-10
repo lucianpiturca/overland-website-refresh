@@ -34,10 +34,10 @@ const Contact = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
+          access_key: "7aaa724b-12a0-49b7-bdb9-558d4476f41f",
           subject: `New Contact from ${formData.name} - Overland Transport`,
           from_name: "Overland Transport Website",
-          to: "freight.overland@gmail.com",
+          to: "orders@overlandtransport.eu",
           name: formData.name,
           email: formData.email,
           phone: formData.phone || "Not provided",
@@ -100,10 +100,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-1">Email Us</h3>
                       <a 
-                        href="mailto:freight.overland@gmail.com" 
+                        href="mailto:orders@overlandtransport.eu" 
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        freight.overland@gmail.com
+                        orders@overlandtransport.eu
                       </a>
                     </div>
                   </div>

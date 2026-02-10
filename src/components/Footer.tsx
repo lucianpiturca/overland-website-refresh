@@ -48,11 +48,11 @@ const Footer = () => {
             <h4 className="font-heading font-bold text-lg mb-4">Contact Us</h4>
             <div className="flex flex-col gap-3">
               <a 
-                href="mailto:freight.overland@gmail.com" 
+                href="mailto:orders@overlandtransport.eu" 
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>freight.overland@gmail.com</span>
+                <span>orders@overlandtransport.eu</span>
               </a>
               <a 
                 href="tel:+40755123456" 
