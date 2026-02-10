@@ -48,7 +48,7 @@ const Header = () => {
         <div className="flex justify-end py-1">
           <div id="google_translate_element" className="[&_.goog-te-gadget]:!font-sans [&_.goog-te-gadget]:!text-xs" />
         </div>
-        <div className="flex h-28 items-center justify-between">
+        <div className="flex h-40 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img 
