@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
+
+declare global {
+  interface Window {
+    googleTranslateElementInit?: () => void;
+    google?: any;
+  }
+}
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -16,9 +23,31 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    // Load Google Translate script
+    if (!document.getElementById("google-translate-script")) {
+      window.googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          { pageLanguage: "en", autoDisplay: false },
+          "google_translate_element"
+        );
+      };
+      const script = document.createElement("script");
+      script.id = "google-translate-script";
+      script.src =
+        "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
       <div className="container mx-auto px-4">
+        {/* Google Translate Bar */}
+        <div className="flex justify-end py-1">
+          <div id="google_translate_element" className="[&_.goog-te-gadget]:!font-sans [&_.goog-te-gadget]:!text-xs" />
+        </div>
         <div className="flex h-28 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
