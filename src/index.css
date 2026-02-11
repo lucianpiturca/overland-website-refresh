@@ -164,9 +164,11 @@
   box-shadow: 0 0 0 2px hsl(199 85% 55% / 0.2) !important;
 }
 
-/* Hide "Powered by Google" text */
+/* Make "Powered by Google" branding very small */
 .goog-te-gadget > span {
-  display: none !important;
+  font-size: 0.55rem !important;
+  opacity: 0.5 !important;
+  display: inline !important;
 }
 
 /* Hide the Google Translate banner bar */

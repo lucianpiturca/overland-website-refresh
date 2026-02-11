@@ -56,9 +56,9 @@ const PalletOptimizer = () => {
               reduce shipping costs, and plan efficient loading configurations for every shipment.
             </p>
             <Button size="lg" asChild className="text-lg px-8">
-              <a href="https://lovable.dev/projects/YOUR_PROJECT_ID" target="_blank" rel="noopener noreferrer">
+              <Link to="/optimizer-tool">
                 Try the Optimizer <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

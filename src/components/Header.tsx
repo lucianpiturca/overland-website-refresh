@@ -23,22 +23,17 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const initTranslate = () => {
-    const el = document.getElementById("google_translate_element");
-    if (el && window.google?.translate?.TranslateElement) {
-      el.innerHTML = "";
-      new window.google.translate.TranslateElement(
-        { pageLanguage: "en", autoDisplay: false },
-        "google_translate_element"
-      );
-    }
-  };
-
   useEffect(() => {
-    // Load Google Translate script once
+    // Only load and init once — never re-init on navigation
     if (!document.getElementById("google-translate-script")) {
       window.googleTranslateElementInit = () => {
-        initTranslate();
+        const el = document.getElementById("google_translate_element");
+        if (el && window.google?.translate?.TranslateElement) {
+          new window.google.translate.TranslateElement(
+            { pageLanguage: "en", autoDisplay: false },
+            "google_translate_element"
+          );
+        }
       };
       const script = document.createElement("script");
       script.id = "google-translate-script";
@@ -46,11 +41,8 @@ const Header = () => {
         "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
       script.async = true;
       document.body.appendChild(script);
-    } else {
-      // Script already loaded, re-init widget
-      initTranslate();
     }
-  }, [location.pathname]);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80 border-b border-border">
