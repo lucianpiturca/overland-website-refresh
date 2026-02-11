@@ -1,6 +1,6 @@
 import { Users, Target, Award, Truck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import Layout from "@/components/Layout";
+
 
 const stats = [
   { icon: Truck, value: "100+", label: "Deliveries Monthly" },
@@ -11,7 +11,7 @@ const stats = [
 
 const About = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
@@ -111,7 +111,7 @@ const About = () => {
           </p>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

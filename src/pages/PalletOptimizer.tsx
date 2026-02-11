@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Box, BarChart3, Maximize2, Layers, Zap, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Layout from "@/components/Layout";
+
 
 const features = [
   {
@@ -39,7 +39,7 @@ const features = [
 
 const PalletOptimizer = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
@@ -174,7 +174,7 @@ const PalletOptimizer = () => {
           </Button>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
