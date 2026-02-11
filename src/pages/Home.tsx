@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Shield, Clock, Cog, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-transport.jpg";
 
 const features = [
@@ -35,8 +34,7 @@ const features = [
 
 const Home = () => {
   return (
-    <Layout>
-      {/* Hero Section */}
+    <>
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -121,7 +119,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Package, Clock, MapPin, Shield, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import Layout from "@/components/Layout";
+
 
 const services = [
   {
@@ -45,7 +45,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
@@ -109,7 +109,7 @@ const Services = () => {
           </Button>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

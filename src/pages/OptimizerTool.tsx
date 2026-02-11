@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Layout from "@/components/Layout";
+
 
 interface Pallet {
   id: number;
@@ -152,7 +152,7 @@ const OptimizerTool = () => {
   };
 
   return (
-    <Layout>
+    <>
       <section className="py-8 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-2">
@@ -356,7 +356,7 @@ const OptimizerTool = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
